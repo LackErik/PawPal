@@ -1,0 +1,81 @@
+body {
+
+  height: 1080px;
+  background: linear-gradient(180deg, rgba(23,113,128,1) 0%, rgba(147,164,227,1) 0%, rgba(61,89,193,1) 100%);
+  background-color: rgba(0, 0, 0, 0);
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-image: linear-gradient(rgb(23, 113, 128) 0%, rgb(147, 164, 227) 0%, rgb(61, 89, 193) 100%);
+  background-size: auto;
+  background-origin: padding-box;
+  background-clip: border-box;
+
+  }
+  h1 {
+    color: white;
+  }
+  p {
+    color: white;
+  }
+  .item1 { grid-area: header; }
+  .item2 { grid-area: main; }
+  .item3 { grid-area: right; }
+  .item4 { grid-area: footer; }
+  .item5 { grid-area: impressum; }
+  
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      'header header header header header'
+      'main main main right right'
+      'footer footer footer footer footer'
+      'impressum impressum impressum impressum impressum';
+    gap: 10px;
+    padding: 10px;
+  justify-content: center;
+  align-items: center;
+  }
+
+  .grid-container > div {
+    padding: 20px 0;
+  }
+
+  .center_container p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .center_container{
+    margin-top: 20px;
+    overflow: visible;
+    white-space: nowrap;
+    text-align: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 33px;
+    color: rgba(255,255,255,1);
+  }
+  .imgbeagle{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .button {
+    border-radius: 12px;
+    background-color:rgba(141,163,231,1);
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    filter: drop-shadow(0px 10px 6px rgba(0, 0, 0, 0.161));
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 40%;
+  }
