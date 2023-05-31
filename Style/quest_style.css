@@ -1,0 +1,80 @@
+body {
+    /**
+      
+      background: linear-gradient(180deg, rgba(23,113,128,1) 0%, rgba(147,164,227,1) 0%, rgba(61,89,193,1) 100%);
+      background-color: rgba(0, 0, 0, 0);
+      background-position-x: 0%;
+      background-position-y: 0%;
+      background-repeat: repeat;
+      background-attachment: scroll;
+      background-image: linear-gradient(rgb(23, 113, 128) 0%, rgb(147, 164, 227) 0%, rgb(61, 89, 193) 100%);
+      background-size: auto;
+      background-origin: padding-box;
+      background-clip: border-box;
+    **/
+    height: 1080px;
+    background-image: linear-gradient(rgb(23, 113, 128) 0%, rgb(147, 164, 227) 0%, rgb(61, 89, 193) 100%);
+      }
+      h1 {
+        color: white;
+      }
+      p {
+        color: white;
+      }
+      .item1 { grid-area: titel; }
+      .item2 { grid-area: container; }
+      .item3 { grid-area: impressum; }
+      
+      .grid-container {
+        display: grid;
+        grid-template-areas:
+          'titel titel titel'
+          'container container container'
+          'impressum impressum impressum';
+        gap: 10px;
+        padding: 10px;
+      justify-content: center;
+      align-items: center;
+      }
+    
+      .grid-container > div {
+        padding: 20px 0;
+      }
+    
+      .center_container p{
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+      .center_container{
+        margin-top: 20px;
+        overflow: visible;
+        white-space: nowrap;
+        text-align: center;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 33px;
+        color: rgba(255,255,255,1);
+      }
+      #back_btn{
+        cursor: pointer;
+        line-height: 21px;
+        text-align: left;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        color: rgba(255,255,255,1);
+        letter-spacing: 0.1px;
+
+      }
+      #question_block {
+        border-radius: 25px;
+        background: rgba(143,165,232,1);
+        padding: 20px; 
+        width: 600px;
+        margin: auto;
+        filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.396));
+
+      }
+    

@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <link href="/color.css" type="text/css" rel="stylesheet" />
+    <link href="/quest_style.css" type="text/css" rel="stylesheet" />
     <link href="/navi.css" type="text/css" rel="stylesheet" />
     <title>Meine Webanwendung</title>
     </head>
 <body>
 <!-- Navigations Bar -->
   <div class="topnav">
-    <a class="active" href="#home">PAWPAL</a>
+    <a class="active" href="home">PAWPAL</a>
     <a href="#about">Overview Dog Breeds</a>
     <div class="search-container">
       <form action="/action_page.php">
@@ -16,39 +16,38 @@
       </form>
     </div>
     <a href="#contact">Login|Sign Up</a>
-  
+   
   </div>
 
   <div class="grid-container">
     <!-- Titel Überschrift -->
     <div class="item1">
       <div class="center_container">
-        <p> TAKE THE QUIZ</p>
-        <p> and find your</p>
-        <p> PAWPAL!</p>
-      </div></div>
+        <p> PAWPAL</p>
+      </div>
+    </div>
     <!-- Text -->
     <div class="item2">
+        <a id="back_btn" href="home">Go Back</a>
+        <div id="question_block">
+            <p>
+                Das könnte eine Frage sein ?
+            </p>
+            <img class="imgbeagle" src="/beagle_rechts.png" alt="Beagle bild">
+            <form action="">
+                <input type="radio" id="j" name="fav_language" value="ja">
+                <input type="radio" id="n" name="fav_language" value="nein">
+                <input type="radio" id="v" name="fav_language" value="vlt?">
+            </form>
+        </div>
       
-      <p>Did you ever wonder which dog fits your
-      <p>needs and wishes perfectly?</p>
-      <p>Based on your preferred breed size, weight,</p>
-      <p>friendliness, talents, intelligence, trainability and more,</p>
-      <p></p>
-      </br>
-      <p>DogForYou finds the dog breed that fits you best.</p>
-      </p>
     </div>
     <!-- Beagel Picture -->
     <div class="item3">
-      <img class="imgbeagle" src="/beagle_rechts.png" alt="Beagle bild">
+      
     </div>
-     <!-- Button -->
-    <div class="item4">
-      <button class="button button1" onclick="location.href = '/question';">Start Quiz Now</button>
-    
-    </div>
-    <div class="item5">
+
+    <div class="item3">
       <p>2023 | Impressum | Terms of Service | Privacy Policy</p>
     </div>
    

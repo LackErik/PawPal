@@ -7,8 +7,11 @@ app.use(express.static(__dirname + "/style"));
 app.use(express.static(__dirname + "/pictures"));
 app.use(express.static('public'));
 
-app.get('/', (req, res) => {
+app.get(['/','/home'], (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
+});
+app.get("/question", function (req, res) {
+  res.sendFile(__dirname + "/question.html")
 });
 
 app.listen(3000, () => {

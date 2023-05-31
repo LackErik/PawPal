@@ -1,6 +1,6 @@
 body {
-
-  height: 1080px;
+/**
+  
   background: linear-gradient(180deg, rgba(23,113,128,1) 0%, rgba(147,164,227,1) 0%, rgba(61,89,193,1) 100%);
   background-color: rgba(0, 0, 0, 0);
   background-position-x: 0%;
@@ -11,7 +11,9 @@ body {
   background-size: auto;
   background-origin: padding-box;
   background-clip: border-box;
-
+**/
+height: 1080px;
+background-image: linear-gradient(rgb(23, 113, 128) 0%, rgb(147, 164, 227) 0%, rgb(61, 89, 193) 100%);
   }
   h1 {
     color: white;
