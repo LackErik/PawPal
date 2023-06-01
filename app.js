@@ -13,7 +13,6 @@ app.get(['/','/home'], (req, res) => {
 app.get("/question", function (req, res) {
   res.sendFile(__dirname + "/question.html")
 });
-
 app.listen(3000, () => {
   console.log('Die Anwendung ist auf http://localhost:3000 verfügbar.');
 });
