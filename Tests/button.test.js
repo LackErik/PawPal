@@ -7,7 +7,7 @@ describe('Button Test', () => {
   beforeAll(async () => {
     browser = await puppeteer.launch();
     page = await browser.newPage();
-    await page.goto('http://localhost:3000'); // Ändern Sie die URL entsprechend Ihrer Anwendung
+    await page.goto('http://localhost:3000'); // Hier die URL der HTML-Seite einfügen
   });
 
   afterAll(async () => {
@@ -15,11 +15,14 @@ describe('Button Test', () => {
   });
 
   it('should simulate a click event on the button and redirect to the expected location', async () => {
-    jest.setTimeout(10000); // Timeout-Limit auf 10 Sekunden erhöhen
-    await page.click('.button1'); // Ändern Sie den Selektor entsprechend Ihrer Button-Klasse
+    await page.waitForSelector('.button1'); // Hier den Selektor des Buttons angeben
+
+    const button = await page.$('.button1');
+    await button.click();
+
     await page.waitForNavigation();
 
-    const url = await page.evaluate(() => window.location.href);
-    expect(url).toBe('http://localhost:3000/question'); // Ändern Sie die URL entsprechend der erwarteten Weiterleitungs-URL
+    const url = await page.url();
+    expect(url).toBe('http://localhost:3000/question'); // Hier die erwartete Weiterleitungs-URL einfügen
   });
 });
