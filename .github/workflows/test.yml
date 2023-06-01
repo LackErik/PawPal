@@ -23,5 +23,5 @@ jobs:
 
       - name: Run tests
         run: |
-          export PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium-browser
-          npm run test:workflow
+          npm install -g concurrently
+          concurrently "npm run start" "jest --runInBand"
