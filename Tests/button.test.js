@@ -15,6 +15,7 @@ describe('Button Test', () => {
   });
 
   it('should simulate a click event on the button and redirect to the expected location', async () => {
+  
     await page.click('.button1'); // Ändern Sie den Selektor entsprechend Ihrer Button-Klasse
     await page.waitForNavigation();
 
