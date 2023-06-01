@@ -21,10 +21,7 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Start server
-        run: npm run start
-
-        # Fügen Sie hier gegebenenfalls zusätzliche Konfigurationen oder Wartezeiten hinzu, um sicherzustellen, dass der Server vollständig gestartet ist.
-
       - name: Run tests
-        run: npx jest
+        run: |
+          export PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium-browser
+          npm run test:workflow
