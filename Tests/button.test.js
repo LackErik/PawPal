@@ -8,7 +8,7 @@ describe('Button Test', () => {
     //browser = await puppeteer.launch();
     browser = await puppeteer.launch({ headless: 'new' });
     page = await browser.newPage();
-    await page.goto('http://localhost:8180'); // Hier die URL der HTML-Seite einfügen
+    await page.goto('http://localhost:3000'); // Hier die URL der HTML-Seite einfügen
   });
 
   afterAll(async () => {
@@ -24,6 +24,6 @@ describe('Button Test', () => {
     await page.waitForNavigation();
 
     const url = await page.url();
-    expect(url).toBe('http://localhost:8180/question'); // Hier die erwartete Weiterleitungs-URL einfügen
+    expect(url).toBe('http://localhost:3000/question'); // Hier die erwartete Weiterleitungs-URL einfügen
   });
 });
