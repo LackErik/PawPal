@@ -19,6 +19,6 @@ app.get('/impressum', (req, res) => {
   res.sendFile(path.join(__dirname, '/view/impressum.html'));
 });
 
-app.listen(3005, () => {
-  console.log('Die Anwendung ist auf http://localhost:3005 verfügbar.');
+app.listen(3000, () => {
+  console.log('Die Anwendung ist auf http://localhost:3000 verfügbar.');
 });
