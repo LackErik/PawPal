@@ -3,10 +3,13 @@
     <head>
     <link href="/quest_style.css" type="text/css" rel="stylesheet" />
     <link href="/navi.css" type="text/css" rel="stylesheet" />
+    <script src="/functions.js"></script>
     <title>Meine Webanwendung</title>
     </head>
 <body>
-<!-- Navigations Bar -->
+
+
+  <!-- Navigations Bar -->
   <div class="topnav">
     <a class="active" href="home">PAWPAL</a>
     <a href="#about">Overview Dog Breeds</a>
@@ -34,20 +37,17 @@
                 Das könnte eine Frage sein ?
             </p>
             <img class="imgbeagle" src="/beagle_rechts.png" alt="Beagle bild">
-            <form action="">
+            <form id="" action="">
                 
-                <input type="radio" id="j" name="fav_language" value="ja">
-                <input type="radio" id="n" name="fav_language" value="nein">
-                <input type="radio" id="v" name="fav_language" value="vlt?">
+                <input type="radio" id="j" name="option" value="ja" >
+                <input type="radio" id="n" name="option" value="nein">
+                <input type="radio" id="v" name="option" value="vlt?">
             </form>
+            <button class="button button1" onclick="speichernAntwort1()">Nächste Frage</button>
+            <p id="demo"></p>
         </div>
       
     </div>
-    <!-- Beagel Picture -->
-    <div class="item3">
-      
-    </div>
-
     <div class="item3">
       <p>2023 |<a id="impressum_btn" href="impressum"> Impressum</a> | Terms of Service | Privacy Policy</p>
     </div>

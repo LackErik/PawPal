@@ -6,10 +6,11 @@ app.use(express.static(__dirname + "/public"));
 app.use(express.static(__dirname + "/style"));
 app.use(express.static(__dirname + "/pictures"));
 app.use(express.static(__dirname + "/view"));
+app.use(express.static(__dirname + "/logic"));
 app.use(express.static('public'));
 
 app.get(['/','/home'], (req, res) => {
-  res.sendFile(path.join(__dirname, 'index.html'));
+  res.sendFile(path.join(__dirname, '/view/index.html'));
 });
 app.get("/question", function (req, res) {
   res.sendFile(__dirname + "/view/question.html")
