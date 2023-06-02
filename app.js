@@ -5,16 +5,17 @@ const path = require('path');
 app.use(express.static(__dirname + "/public"));
 app.use(express.static(__dirname + "/style"));
 app.use(express.static(__dirname + "/pictures"));
+app.use(express.static(__dirname + "/view"));
 app.use(express.static('public'));
 
 app.get(['/','/home'], (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
 app.get("/question", function (req, res) {
-  res.sendFile(__dirname + "/question.html")
+  res.sendFile(__dirname + "/view/question.html")
 });
 app.get('/impressum', (req, res) => {
-  res.sendFile(path.join(__dirname, '/impressum.html'));
+  res.sendFile(path.join(__dirname, '/view/impressum.html'));
 });
 
 app.listen(3000, () => {
