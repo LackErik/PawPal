@@ -21,7 +21,7 @@ describe('Button Test', () => {
     const button = await page.$('.button1');
     await button.click();
 
-    await page.waitForNavigation();
+    await page.waitForNavigation({ timeout: 10000 });
 
     const url = await page.url();
     expect(url).toBe('http://localhost:3000/question'); // Hier die erwartete Weiterleitungs-URL einfügen
