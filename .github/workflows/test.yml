@@ -17,12 +17,18 @@ jobs:
         run: npm install
 
       - name: Start server
-        run: |
-          export PUPPETEER_EXECUTABLE_PATH="/usr/bin/chromium-browser"
-          npm start &
+        run: npm start
 
       - name: Wait for server to start
-        run: sleep 5
+        run: |
+          timeout=$(($(date +%s) + 30))
+          while ! curl -s http://localhost:3000 >/dev/null; do
+            if [ "$(date +%s)" -gt "$timeout" ]; then
+              echo "Server did not start within the timeout period."
+              exit 1
+            fi
+            sleep 1
+          done
 
       - name: Run Jest tests
         run: npm test
