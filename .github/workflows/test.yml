@@ -16,4 +16,5 @@ jobs:
       - name: Run Tests
         run: |
           npm install 
+          xvfb-run npm start
           npm test
