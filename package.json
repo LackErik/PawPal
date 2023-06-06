@@ -12,7 +12,8 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",
-    "puppeteer": "^10.4.0"
+    "puppeteer": "^10.4.0",
+    "wait-on": "^7.0.1"
   },
   "devDependencies": {
     "concurrently": "^8.1.0",
