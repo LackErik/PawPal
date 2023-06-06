@@ -1,20 +1,29 @@
-
-name: Unit Tests
-
-on:
-  push:
-    branches:
-      - master
-  pull_request:
-    branches: [master]
+name: Test Workflow
+on: [push]
 
 jobs:
-  Jest:
+  test:
     runs-on: ubuntu-latest
+    env:
+      PUPPETEER_EXECUTABLE_PATH: /usr/bin/chromium-browser
+    
     steps:
-      - uses: actions/checkout@v1
-      - name: Run Tests
-        run: |
-          npm install 
-          xvfb-run npm start
-          npm test
+    - name: Checkout code
+      uses: actions/checkout@v2
+    
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: 14
+    
+    - name: Install dependencies
+      run: npm install
+    
+    - name: Start server
+      run: npm run start &
+    
+    - name: Wait for server to start
+      run: sleep 5
+    
+    - name: Run tests
+      run: npm run test:workflow
