@@ -20,7 +20,7 @@ jobs:
       run: npm install
     
     - name: Start server
-      run: npm run start &
+      run: npm run -- --headless &
     
     - name: Wait for server to start
       run: sleep 5
