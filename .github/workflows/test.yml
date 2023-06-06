@@ -1,23 +1,27 @@
-name: Jest Test
+name: Unit Tests
 
-on: [push]
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches: [master]
 
 jobs:
-  build:
+  Jest:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v2
 
       - name: Install dependencies
         run: npm install
 
       - name: Start server
-        run: npm run start &
+        run: npm run start:headless
 
       - name: Wait for server to start
-        run: sleep 10
+        run: sleep 10   # Wartezeit entsprechend anpassen
 
       - name: Run tests
         run: npm test
