@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node app.js",
-    "test": "concurrently \"npm run start\" \"jest --runInBand\"",
-    "test:workflow": "PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium-browser npm run start && jest --runInBand"
+    "test": "concurrently \"npm run start\" \"jest --runInBand\""
   },
   "author": "",
   "license": "ISC",
