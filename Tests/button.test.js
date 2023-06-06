@@ -6,7 +6,7 @@ describe('Button Test', () => {
 
   beforeAll(async () => {
     //browser = await puppeteer.launch();
-    browser = await puppeteer.launch({ headless: 'new' });
+    browser = await puppeteer.launch({ headless: true });
     page = await browser.newPage();
     await page.goto('http://localhost:3000'); // Hier die URL der HTML-Seite einfügen
   });
