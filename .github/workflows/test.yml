@@ -1,4 +1,5 @@
-# .github/workflows/build.yml
+name: Server and Test Workflow
+
 on: [push]
 
 jobs:
@@ -6,20 +7,24 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+    - name: Checkout code
+      uses: actions/checkout@v2
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: 14
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: 14
 
-      - name: Install dependencies
-        run: npm install
+    - name: Install dependencies
+      run: npm install
 
-      - name: Install XVFB
-        run: sudo apt-get install xvfb
+    - name: Start server
+      run: |
+        export DISPLAY=:99
+        Xvfb :99 -screen 0 1024x768x24 > /dev/null 2>&1 &
+        sleep 3 # Wait for Xvfb to start
+        node app.js &
+        sleep 3 # Wait for server to start
 
-      - name: Run headless test
-        uses: GabrielBB/xvfb-action@v1
-        with:
-          run: npm test
+    - name: Run tests
+      run: npm test
