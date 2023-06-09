@@ -22,7 +22,10 @@ jobs:
         run: npm install
 
       - name: Start Web App
-        run: node app.js
+        run: npm start &
+
+      - name: Wait for Web App to start
+        run: sleep 5 # Adjust the sleep duration if needed
 
       - name: Run Jest tests
         run: npm run test
