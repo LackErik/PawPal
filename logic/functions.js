@@ -21,3 +21,21 @@ function speichernAntwort1() {
     
 
   }
+
+  function changeColor(buttonId) {
+    var buttons = document.querySelectorAll('.button-bar button');
+    var line = document.querySelector('.button-bar .line');
+  
+    for (var i = 0; i < buttons.length; i++) {
+      if (i < buttonId) {
+        buttons[i].classList.add('active');
+      } else {
+        buttons[i].classList.remove('active');
+      }
+    }
+  
+    var widthPercentage = (buttonId - 1) / (buttons.length - 1) * 100;
+    line.style.width = `${widthPercentage}%`;
+    //line.style.backgroundColor = ''; // Ändern Sie die Hintergrundfarbe hier
+    line.classList.add('active');
+  }

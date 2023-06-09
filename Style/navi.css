@@ -3,15 +3,34 @@
 
   body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Montserrat;
   }
   .search_btn p{
     margin: 0;
   }
   .search_btn p{
     margin: 0;
+  }
+  p{
+    font-family: Montserrat;
+  }
+  a{
+    font-family: Montserrat;
   }
   
+  #logo{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+  }
+  .headerElements{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+  }
   .topnav {
     overflow: hidden;
   }
@@ -37,7 +56,7 @@
   
   .topnav .search-container {
     float: left;
-    width: 70%;
+    width: 50%;
   }
   
   .topnav input[type=text] {
@@ -49,7 +68,7 @@
     border-style: solid;
     border-radius: 12px;
     border-color: white;
-    width: 70%;
+    width: 80%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -67,6 +86,10 @@
   
   .topnav .search-container button:hover {
     background: #ccc;
+  }
+
+  #loginHeader{
+    float: right;
   }
   
   @media screen and (max-width: 600px) {

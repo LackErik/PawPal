@@ -14,18 +14,36 @@ body {
 **/
 height: 1080px;
 background-image: linear-gradient(rgb(23, 113, 128) 0%, rgb(147, 164, 227) 0%, rgb(61, 89, 193) 100%);
+font-family: Montserrat;
   }
   h1 {
     color: white;
   }
   p {
     color: white;
+    font-family: Montserrat;
   }
   .item1 { grid-area: header; }
   .item2 { grid-area: main; }
   .item3 { grid-area: right; }
   .item4 { grid-area: footer; }
   .item5 { grid-area: impressum; }
+
+#title1{
+
+  font-size: 33px;
+
+}
+#title2{
+
+  font-size: 33px;
+  font-style:normal;
+  font-weight:normal;
+}
+#title3{
+  font-size:55px;
+  letter-spacing:0.5px;
+}
   
   .grid-container {
     display: grid;
@@ -41,7 +59,8 @@ background-image: linear-gradient(rgb(23, 113, 128) 0%, rgb(147, 164, 227) 0%, r
   }
 
   .grid-container > div {
-    padding: 20px 0;
+    padding: 20px;
+    /** padding: 20px 0; */
   }
 
   .center_container p{
@@ -80,4 +99,5 @@ background-image: linear-gradient(rgb(23, 113, 128) 0%, rgb(147, 164, 227) 0%, r
     margin-right: auto;
     display: block;
     width: 40%;
+    font-family: Montserrat;
   }

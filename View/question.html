@@ -11,7 +11,7 @@
 
   <!-- Navigations Bar -->
   <div class="topnav">
-    <a class="active" href="home">PAWPAL</a>
+    <a id='logo' class="active" href="home">PAWPAL</a>
     <a href="#about">Overview Dog Breeds</a>
     <div class="search-container">
       <form action="/action_page.php">
@@ -37,6 +37,15 @@
                 Das könnte eine Frage sein ?
             </p>
             <img class="imgbeagle" src="/beagle_rechts.png" alt="Beagle bild">
+            <div class="button-bar">
+              <div class="line"></div>
+              <div class="background-line"></div>
+              <button style='float: left;'id="button1" onclick="changeColor(1)"></button>
+              <button style='margin-right: auto; margin-left: auto;' id="button2" onclick="changeColor(2)"></button>
+              <button style='float: right;' id="button3" onclick="changeColor(3)"></button>
+           
+            </div>
+            
             <form id="" action="">
                 
                 <input type="radio" id="j" name="option" value="ja" >
