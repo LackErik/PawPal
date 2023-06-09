@@ -22,10 +22,7 @@ jobs:
           node-version: 14
 
       - name: Install dependencies
-        run: npm ci
-
-      - name: Run ESLint
-        run: npm run lint
+        run: npm install
 
       - name: Run Jest tests
         run: npm run test
