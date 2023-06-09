@@ -1,15 +1,12 @@
-name: Run Puppeteer Tests
+name: Run Web App
 
 on:
   push:
     branches:
       - main
-  pull_request:
-    branches:
-      - main
 
 jobs:
-  test:
+  build:
     runs-on: ubuntu-latest
 
     steps:
@@ -24,9 +21,8 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Build web application
-        run: npm run build
-        # Führe das Build-Script deiner Webanwendung aus, um das Projekt zu erstellen
+      - name: Start Web App
+        run: node app.js
 
       - name: Run Jest tests
         run: npm run test
