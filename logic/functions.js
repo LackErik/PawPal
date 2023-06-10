@@ -39,3 +39,16 @@ function speichernAntwort1() {
     //line.style.backgroundColor = ''; // Ändern Sie die Hintergrundfarbe hier
     line.classList.add('active');
   }
+
+  function auswahlSpeichern(ausgewaehlteOption) {
+
+       // Anzeigen des Weiter-Buttons
+       var weiterButton = document.getElementById('button_nextquestion');
+       weiterButton.style.display = 'block';
+    // Speichern der ausgewählten Option, z. B. in einer Variablen oder in Local Storage
+    localStorage.setItem("antwort1", ausgewaehlteOption);
+    document.getElementById("demo").innerHTML = localStorage.getItem('antwort1');
+  
+ 
+
+  }

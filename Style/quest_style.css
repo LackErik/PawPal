@@ -156,5 +156,23 @@ body {
         justify-content: space-between;
         align-items: center;
       }
+      #button_nextquestion{
+        border-radius: 12px;
+        background-color:rgba(141,163,231,1);
+        border: none;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        margin-top: 20px ;
+        cursor: pointer;
+        filter: drop-shadow(0px 10px 6px rgba(0, 0, 0, 0.161));
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: 40%;
+        font-family: Montserrat;
+      }
       
       

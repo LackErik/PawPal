@@ -42,11 +42,11 @@
             </div>
             <div class="button-bar">
 
-              <button style='float: left;'id="button1" onclick="changeColor(1)"></button>
+              <button style='float: left;'id="button1" onclick="changeColor(1);auswahlSpeichern('Option 1');" name="option" ></button>
             
-              <button style='margin-right: auto; margin-left: auto;' id="button2" onclick="changeColor(2)"></button>
+              <button style='margin-right: auto; margin-left: auto;' id="button2" onclick="changeColor(2); auswahlSpeichern('Option 2');" name="option" ></button>
            
-              <button style='float: right;' id="button3" onclick="changeColor(3)"></button>
+              <button style='float: right;' id="button3" onclick="changeColor(3); auswahlSpeichern('Option 3');" name="option"></button>
       
               <div class="line"></div>
               <div class="background-line"></div>
@@ -55,9 +55,10 @@
             <div class="ButtonText-Bar">
               <p>Small</p>
               <p>Medium</p>
-              <p>Big</p>
+              <p>Large</p>
             </div>
-
+            <button id="button_nextquestion" style="display: none;" onclick="speichernAntwort1()">Next</button>
+            <p id="demo"></p>
             <!-- Text 
             
             <form id="" action="">
