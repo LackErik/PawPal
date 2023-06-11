@@ -1,6 +1,8 @@
 const express = require('express');
 const app = express();
 const path = require('path');
+let server;
+
 //den Ordner Public freigeben
 app.use(express.static(__dirname + "/public"));
 app.use(express.static(__dirname + "/style"));
@@ -19,6 +21,11 @@ app.get('/impressum', (req, res) => {
   res.sendFile(path.join(__dirname, '/view/impressum.html'));
 });
 
-app.listen(3000, () => {
-  console.log('Die Anwendung ist auf http://localhost:3000 verfügbar.');
-});
+
+module.exports.start = () => {
+  server = app.listen(3000, () => console.log('Die Anwendung ist auf http://localhost:3000 verfügbar.'));
+};
+
+module.exports.close = () => {
+  server.close();
+};
