@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link href="/quest_style.css" type="text/css" rel="stylesheet" />
+    <link href="/navi.css" type="text/css" rel="stylesheet" />
+    <script src="/functions.js"></script>
+    <title>Meine Webanwendung</title>
+    </head>
+<body>
+
+
+  <!-- Navigations Bar -->
+  <div class="topnav">
+    <a id='logo' class="active" href="home">PAWPAL</a>
+    <a class="headerElements" href="#about">Overview Dog Breeds</a>
+    <div class="search-container">
+      <form action="/action_page.php">
+        <input type="text" placeholder="Search.." name="search">
+      </form>
+    </div>
+    <a id="loginHeader" class="headerElements" href="#contact">Login|Sign Up</a>
+  
+  </div>
+
+  <div class="grid-container">
+    <!-- Titel Überschrift -->
+    <div class="item1">
+      <div class="center_container">
+        <p> PAWPAL</p>
+      </div>
+    </div>
+    <!-- Text -->
+    <div class="item2">
+
+  <!-- Question 1 -->
+
+        <div class="question_block" id="question1" style="display: block;">
+            <p id="question_Text">
+              How big do you want your dog to be?
+            </p>
+            <div class="pictures_block">
+              <img class="imgbeagle" style="width: 150px; float: left;" src="/undraw_dog_walking_re_l61p.svg" alt="klein bild">
+              <img class="imgbeagle" style="width: 150px; float: right;" src="/undraw_good_doggy_re_eet7.svg" alt="groß bild">
+            </div>
+            <div class="button-bar">
+
+              <button style='float: left;'id="button1" onclick="changeColor(1);auswahlSpeichern('q1','Option 1');" name="option" ></button>
+            
+              <button style='margin-right: auto; margin-left: auto;' id="button2" onclick="changeColor(2); auswahlSpeichern('q1','Option 2');" name="option" ></button>
+           
+              <button style='float: right;' id="button3" onclick="changeColor(3); auswahlSpeichern('q1','Option 3');" name="option"></button>
+      
+              <div class="line"></div>
+              <div class="background-line"></div>
+           
+            </div>
+            <div class="ButtonText-Bar">
+              <p>Small</p>
+              <p>Medium</p>
+              <p>Large</p>
+            </div>
+            <button id="button_nextquestion" style="display: none;"   onclick="location.href = '/question2';">Next</button>
+            <p id="demo"></p>
+        </div>
+  </div>
+  <div class="item3">
+    <p>2023 |<a id="impressum_btn" href="impressum"> Impressum</a> | Terms of Service | Privacy Policy</p>
+  </div>
+
+
+</body>
+</html>

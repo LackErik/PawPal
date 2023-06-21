@@ -72,6 +72,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    border-width: 2px;
   }
   
   .topnav .search-container button {
@@ -102,8 +103,10 @@
       width: 100%;
       margin: 0;
       padding: 14px;
+     
     }
     .topnav input[type=text] {
       border: 1px solid #ccc;  
+    
     }
   }
