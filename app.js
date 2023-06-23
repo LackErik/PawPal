@@ -42,6 +42,10 @@ app.get("/question7", function (req, res) {
 app.get("/result", function (req, res) {
   res.sendFile(__dirname + "/view/result.html")
 });
+app.get("/dogInfo", function (req, res) {
+  res.sendFile(__dirname + "/view/dogInfo.html")
+});
+
 app.get('/impressum', (req, res) => {
   res.sendFile(path.join(__dirname, '/view/impressum.html'));
 });
