@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link href="/quest_style.css" type="text/css" rel="stylesheet" />
+    <link href="/navi.css" type="text/css" rel="stylesheet" />
+    <script src="/functions.js"></script>
+    <title>Meine Webanwendung</title>
+    </head>
+<body>
+
+
+  <!-- Navigations Bar -->
+  <div class="topnav">
+    <a id='logo' class="active" href="home">PAWPAL</a>
+    <a class="headerElements" href="#about">Overview Dog Breeds</a>
+    <div class="search-container">
+      <form action="/action_page.php">
+        <input type="text" placeholder="Search.." name="search">
+      </form>
+    </div>
+    <a id="loginHeader" class="headerElements" href="#contact">Login|Sign Up</a>
+  
+  </div>
+
+  <div class="grid-container">
+    <!-- Titel Überschrift -->
+    <div class="item1">
+      <div class="center_container">
+        <p> PAWPAL</p>
+      </div>
+    </div>
+    <!-- Text -->
+    <div class="item2">
+        <a id="back_btn" href="/question4">Go Back</a>
+ 
+
+
+      <!-- Question 5 -->
+       <div class="question_block" id="question5" >
+        <p id="question_Text">
+          How long should your dog’s fur be?
+        </p>
+        <div class="pictures_block">
+          <img class="imgbeagle" style="width: 150px; float: left;" src="/undraw_walk_dreaming_u-58-a.svg" alt="klein bild">
+        </div>
+        <div class="button-bar">
+
+          <button style='float: left;'id="button1" onclick="changeColor(1);auswahlSpeichern('q5','Option 1');" name="option" ></button>
+        
+          <button style='margin-left: auto;' id="button2" onclick="changeColor(2); auswahlSpeichern('q5','Option 2');" name="option" ></button>
+
+          <button style='margin-right: auto; margin-left: auto;' id="button2" onclick="changeColor(3); auswahlSpeichern('q5','Option 3');" name="option" ></button>
+       
+          <button style='float: right;' id="button3" onclick="changeColor(4); auswahlSpeichern('q5','Option 3');" name="option"></button>
+  
+          <div class="line"></div>
+          <div class="background-line"></div>
+       
+        </div>
+        <div class="ButtonText-Bar">
+          <p>no hair</p>
+          <p>short hair</p>
+          <p>medium hair</p>
+          <p>long hair</p>
+        </div>
+        <button id="button_nextquestion" style="display: none;"  onclick="location.href = '/question6';">Next</button>
+        <p id="demo"></p>
+    </div>
+  </div>
+  <div class="item3">
+    <p>2023 |<a id="impressum_btn" href="impressum"> Impressum</a> | Terms of Service | Privacy Policy</p>
+  </div>
+
+
+</body>
+</html>

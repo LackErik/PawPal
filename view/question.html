@@ -32,7 +32,9 @@
     <!-- Text -->
     <div class="item2">
         <a id="back_btn" href="home">Go Back</a>
-        <div id="question_block">
+  <!-- Question 1 -->
+
+        <div class="question_block" id="question1" style="display: block;">
             <p id="question_Text">
               How big do you want your dog to be?
             </p>
@@ -59,26 +61,167 @@
             </div>
             <button id="button_nextquestion" style="display: none;" onclick="speichernAntwort1()">Next</button>
             <p id="demo"></p>
-            <!-- Text 
-            
-            <form id="" action="">
-                
-                <input type="radio" id="j" name="option" value="ja" >
-                <input type="radio" id="n" name="option" value="nein">
-                <input type="radio" id="v" name="option" value="vlt?">
-            </form>
-            <button class="button button1" onclick="speichernAntwort1()">Nächste Frage</button>
-            <p id="demo"></p>
-            -->
         </div>
-      
-    </div>
-    <div class="item3">
-      <p>2023 |<a id="impressum_btn" href="impressum"> Impressum</a> | Terms of Service | Privacy Policy</p>
-    </div>
-   
-  </div>
+        <!-- Question 2 -->
 
+        <div class="question_block" id="question2" style="display: none;">
+          <p id="question_Text">
+            Do you live in a house or apartment?
+          </p>
+          <div class="pictures_block">
+            <img class="imgbeagle" style="width: 150px; float: right;" src="/undraw_sweet_home_dkhr.svg" alt="groß bild">
+            <img class="imgbeagle" style="width: 150px; float: left;" src="/undraw_apartment_rent_o-0-ut.svg" alt="Apartment bild">
+          </div>
+ 
+          <button id="button_nextquestion" style="display: none;" onclick="speichernAntwort1()">Next</button>
+          <p id="demo"></p>
+         </div>
+
+
+      <!-- Question 3 -->
+
+      <div class="question_block" id="question3" style="display: none;">
+        <p id="question_Text">
+          How long do you want to walk with your dog a day?
+        </p>
+        <div class="pictures_block">
+          <img class="imgbeagle" style="width: 150px;" src="/undraw_dog_walking_re_l61p.svg" alt="klein bild">
+        </div>
+        <div class="button-bar">
+
+          <button style='float: left;'id="button1" onclick="changeColor(1);auswahlSpeichern('Option 1');" name="option" ></button>
+        
+          <button style='margin-right: auto; margin-left: auto;' id="button2" onclick="changeColor(2); auswahlSpeichern('Option 2');" name="option" ></button>
+
+          <button style='margin-right: auto; margin-left: auto;' id="button3" onclick="changeColor(3); auswahlSpeichern('Option 3');" name="option"></button>
+       
+          <button style='float: right;' id="button4" onclick="changeColor(3); auswahlSpeichern('Option 3');" name="option"></button>
+  
+          <div class="line"></div>
+          <div class="background-line"></div>
+       
+        </div>
+        <div class="ButtonText-Bar">
+          <p>Small</p>
+          <p>Medium</p>
+          <p>Large</p>
+        </div>
+        <button id="button_nextquestion" style="display: none;" onclick="speichernAntwort1()">Next</button>
+        <p id="demo"></p>
+    </div>
+
+     <!-- Question 4 -->
+
+     <div class="question_block" id="question4" style="display: none;">
+        <p id="question_Text">
+          Does your dog need to be child-friendly?
+        </p>
+        <div class="pictures_block">
+          <img class="imgbeagle" style="width: 150px; float: left;" src="/undraw_play_time_-7-k7b.svg" alt="klein bild">
+          <img class="imgbeagle" style="width: 150px; float: right;" src="/undraw_having_fun_re_vj4h.svg" alt="groß bild">
+        </div>
+        
+        
+        <button id="button_nextquestion" style="display: none;" onclick="speichernAntwort1()">Next</button>
+        <p id="demo"></p>
+       </div>
+
+
+      <!-- Question 5 -->
+       <div class="question_block" id="question5" style="display: none;">
+        <p id="question_Text">
+          How long should your dog’s fur be?
+        </p>
+        <div class="pictures_block">
+          <img class="imgbeagle" style="width: 150px; float: left;" src="/undraw_walk_dreaming_u-58-a.svg" alt="klein bild">
+        </div>
+        <div class="button-bar">
+
+          <button style='float: left;'id="button1" onclick="changeColor(1);auswahlSpeichern('Option 1');" name="option" ></button>
+        
+          <button style='margin-right: auto; margin-left: auto;' id="button2" onclick="changeColor(2); auswahlSpeichern('Option 2');" name="option" ></button>
+          <button style='margin-right: auto; margin-left: auto;' id="button2" onclick="changeColor(2); auswahlSpeichern('Option 2');" name="option" ></button>
+       
+          <button style='float: right;' id="button3" onclick="changeColor(3); auswahlSpeichern('Option 3');" name="option"></button>
+  
+          <div class="line"></div>
+          <div class="background-line"></div>
+       
+        </div>
+        <div class="ButtonText-Bar">
+          <p>no hair</p>
+          <p>short hair</p>
+          <p>medium hair</p>
+          <p>long hair</p>
+        </div>
+        <button id="button_nextquestion" style="display: none;" onclick="speichernAntwort1()">Next</button>
+        <p id="demo"></p>
+    </div>
+      
+    <!-- Question 6 -->
+
+        <div class="question_block" id="question6" style="display: none;">
+            <p id="question_Text">
+              How much time do you want to invest in grooming?
+            </p>
+            <div class="pictures_block">
+              <img class="imgbeagle" style="width: 150px; float: left;" src="/undraw_dog_c7i6.svg" alt="klein bild">
+            </div>
+            <div class="button-bar">
+
+              <button style='float: left;'id="button1" onclick="changeColor(1);auswahlSpeichern('Option 1');" name="option" ></button>
+            
+              <button style='margin-right: auto; margin-left: auto;' id="button2" onclick="changeColor(2); auswahlSpeichern('Option 2');" name="option" ></button>
+           
+              <button style='float: right;' id="button3" onclick="changeColor(3); auswahlSpeichern('Option 3');" name="option"></button>
+      
+              <div class="line"></div>
+              <div class="background-line"></div>
+           
+            </div>
+            <div class="ButtonText-Bar">
+              <p>little</p>
+              <p>a bit</p>
+              <p>a lot</p>
+            </div>
+            <button id="button_nextquestion" style="display: none;" onclick="speichernAntwort1()">Next</button>
+            <p id="demo"></p>
+        </div>
+    <!-- Question 7  -->
+
+    <div class="question_block" id="question7" style="display: none;">
+      <p id="question_Text">
+        How big do you want your dog to be?
+      </p>
+      <div class="pictures_block">
+        <img class="imgbeagle" style="width: 150px; float: left;" src="/undraw_bus_stop_re_h8ej.svg" alt="klein bild">
+      </div>
+      <div class="button-bar">
+
+        <button style='float: left;'id="button1" onclick="changeColor(1);auswahlSpeichern('Option 1');" name="option" ></button>
+      
+        <button style='margin-right: auto; margin-left: auto;' id="button2" onclick="changeColor(2); auswahlSpeichern('Option 2');" name="option" ></button>
+     
+        <button style='float: right;' id="button3" onclick="changeColor(3); auswahlSpeichern('Option 3');" name="option"></button>
+
+        <div class="line"></div>
+        <div class="background-line"></div>
+     
+      </div>
+      <div class="ButtonText-Bar">
+        <p>litte</p>
+        <p>a bit</p>
+        <p>a lot</p>
+      </div>
+      <button id="button_nextquestion" style="display: none;" onclick="speichernAntwort1()">Next</button>
+      <p id="demo"></p>
+  </div>
+  <button id="weiterButton" onclick="nextquestionaktivate()">Weiter</button>
+  <p id="buttoncounter"></p>
+  </div>
+  <div class="item3">
+    <p>2023 |<a id="impressum_btn" href="impressum"> Impressum</a> | Terms of Service | Privacy Policy</p>
+  </div>
 
 
 </body>

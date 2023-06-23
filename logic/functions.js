@@ -23,6 +23,7 @@ function speichernAntwort1() {
   }
 
   function changeColor(buttonId) {
+    
     var buttons = document.querySelectorAll('.button-bar button');
     var line = document.querySelector('.button-bar .line');
   
@@ -40,15 +41,54 @@ function speichernAntwort1() {
     line.classList.add('active');
   }
 
-  function auswahlSpeichern(ausgewaehlteOption) {
+  function imgcolor(button) {
+    
+      var buttons = document.querySelectorAll('.img_button');
+    
+      //const buttons = document.getElementsByTagName('button');
+  
+  for (let i = 0; i < buttons.length; i++) {
+    if (buttons[i] === button) {
+      buttons[i].classList.add('active');
+    } else {
+      buttons[i].classList.remove('active');
+    }
+  }
+  }
+
+  function auswahlSpeichern(thema, ausgewaehlteOption) {
 
        // Anzeigen des Weiter-Buttons
        var weiterButton = document.getElementById('button_nextquestion');
        weiterButton.style.display = 'block';
-    // Speichern der ausgewählten Option, z. B. in einer Variablen oder in Local Storage
-    localStorage.setItem("antwort1", ausgewaehlteOption);
-    document.getElementById("demo").innerHTML = localStorage.getItem('antwort1');
-  
- 
+      // Speichern der ausgewählten Option, z. B. in einer Variablen oder in Local Storage
+      localStorage.setItem(thema, ausgewaehlteOption);
+      document.getElementById("demo").innerHTML = localStorage.getItem(thema);
 
+  }
+
+  let currentIndex = 0;
+  function nextquestionaktivate(){
+    const blocks = document.querySelectorAll('.question_block');
+   
+
+      if (currentIndex < blocks.length - 1) {
+        blocks[currentIndex].style.display = 'none';
+        currentIndex++;
+        blocks[currentIndex].style.display = 'block';
+      }
+
+      document.getElementById("buttoncounter").innerHTML = currentIndex;
+
+  }
+  function anzeigen(){
+    var stats = "hi";
+    stats += "frage1: " + localStorage.getItem('q1');
+    stats += "frage2: " + localStorage.getItem('q2');
+    stats += "frage3: " + localStorage.getItem('q3');
+    stats += "frage4: " + localStorage.getItem('q4');
+    stats += "frage5: " + localStorage.getItem('q5');
+    stats += "frage6: " + localStorage.getItem('q6');
+    stats += "frage7: " + localStorage.getItem('q7');
+    document.getElementById("demo").innerHTML = stats;
   }

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link href="/quest_style.css" type="text/css" rel="stylesheet" />
+    <link href="/navi.css" type="text/css" rel="stylesheet" />
+    <script src="/functions.js"></script>
+    <title>Meine Webanwendung</title>
+    </head>
+<body>
+
+
+  <!-- Navigations Bar -->
+  <div class="topnav">
+    <a id='logo' class="active" href="home">PAWPAL</a>
+    <a class="headerElements" href="#about">Overview Dog Breeds</a>
+    <div class="search-container">
+      <form action="/action_page.php">
+        <input type="text" placeholder="Search.." name="search">
+      </form>
+    </div>
+    <a id="loginHeader" class="headerElements" href="#contact">Login|Sign Up</a>
+  
+  </div>
+
+  <div class="grid-container">
+    <!-- Titel Überschrift -->
+    <div class="item1">
+      <div class="center_container">
+        <p> PAWPAL</p>
+      </div>
+    </div>
+    <!-- Text -->
+    <div class="item2">
+        <a id="back_btn" href="/question3">Go Back</a>
+ 
+
+     <!-- Question 4 -->
+
+     <div class="question_block" id="question4" >
+        <p id="question_Text">
+          Does your dog need to be child-friendly?
+        </p>
+        <div class="pictures_block">
+          <button class ="img_button" id="button1" onclick="imgcolor(this);auswahlSpeichern('q4','Option 1');" name="option" >
+            <img class="imgbeagle" style="width: 150px; float: left;" src="/undraw_play_time_-7-k7b.svg" alt="klein bild">
+          </button>
+          <button class ="img_button" id="button2" onclick="imgcolor(this);auswahlSpeichern('q4','Option 2');" name="option" >
+            <img class="imgbeagle" style="width: 150px; float: right;" src="/undraw_having_fun_re_vj4h.svg" alt="groß bild">
+          </button>
+         
+        </div>
+        
+        
+        <button id="button_nextquestion" style="display: none;"  onclick="location.href = '/question5';">Next</button>
+        <p id="demo"></p>
+       </div>
+  </div>
+  <div class="item3">
+    <p>2023 |<a id="impressum_btn" href="impressum"> Impressum</a> | Terms of Service | Privacy Policy</p>
+  </div>
+
+
+</body>
+</html>

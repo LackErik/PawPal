@@ -68,14 +68,25 @@ body {
         letter-spacing: 0.1px;
 
       }
-      #question_block {
+      .question_block {
         border-radius: 25px;
         background: rgba(143,165,232,1);
-        padding: 20px; 
+        padding: 20px 45px;
         width: 600px;
         margin: auto;
         filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.396));
 
+      }
+      .img_button{
+        background: none;
+        background-color: none;
+        border: none;
+        display: block;
+        margin: auto;
+      }
+      .img_button.active {
+        background-color: rgba(59,95,202,1);
+        z-index: 3;
       }
       #question_Text{
 
