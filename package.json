@@ -2,20 +2,18 @@
   "name": "pawpal",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "start": "node app.js",
+    "start": "node -e 'require(\"./app\").start()'",
     "test": "jest"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2",
-    "puppeteer": "^10.4.0"
+    "express": "^4.18.2"
   },
   "devDependencies": {
-    "concurrently": "^8.1.0",
-    "eslint": "^8.0.1",
-    "jest": "^29.5.0"
+    "jest": "^29.5.0",
+    "puppeteer": "^10.4.0"
   }
 }
