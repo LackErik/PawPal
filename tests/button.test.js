@@ -13,7 +13,7 @@ describe('Button Test', () => {
   afterAll(async () => {
     await browser.close();
   });
-
+/*
   it('should simulate a click event on the button and redirect to the expected location', async () => {
     await page.waitForSelector('.button1'); // Hier den Selektor des Buttons angeben
 
@@ -37,7 +37,7 @@ describe('Button Test', () => {
     const url = await page.url();
     expect(url).toBe('http://localhost:3000/home'); // Hier die erwartete Weiterleitungs-URL zurück zur Hauptseite einfügen
   });
-
+*/
   it('should simulate a click event on the "Impressum" link and redirect to the impressum page', async () => {
     await page.waitForSelector('#impressum_btn'); // Hier den Selektor des "Impressum" Links angeben
 

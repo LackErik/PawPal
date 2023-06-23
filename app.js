@@ -16,31 +16,6 @@ app.get(['/','/home'], (req, res) => {
 app.get("/question", function (req, res) {
   res.sendFile(__dirname + "/view/question.html")
 });
-app.get("/question1", function (req, res) {
-  res.sendFile(__dirname + "/view/question1.html")
-});
-app.get("/question2", function (req, res) {
-  res.sendFile(__dirname + "/view/question2.html")
-});
-app.get("/question3", function (req, res) {
-  res.sendFile(__dirname + "/view/question3.html")
-});
-app.get("/question4", function (req, res) {
-  res.sendFile(__dirname + "/view/question4.html")
-});
-app.get("/question5", function (req, res) {
-  res.sendFile(__dirname + "/view/question5.html")
-});
-app.get("/question6", function (req, res) {
-  res.sendFile(__dirname + "/view/question6.html")
-});
-app.get("/question7", function (req, res) {
-  res.sendFile(__dirname + "/view/question7.html")
-});
-app.get("/result", function (req, res) {
-  res.sendFile(__dirname + "/view/result.html")
-});
-
 app.get('/impressum', (req, res) => {
   res.sendFile(path.join(__dirname, '/view/impressum.html'));
 });
