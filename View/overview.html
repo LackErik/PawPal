@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link href="/quest_style_overview.css" type="text/css" rel="stylesheet" />
+    <link href="/dogCard.css" type="text/css" rel="stylesheet" />
+    <link href="/navi.css" type="text/css" rel="stylesheet" />
+    <link href="/dogInfo_style.css" type="text/css" rel="stylesheet" />
+    <script src="/dataManager.js"></script>
+    <title>Meine Webanwendung</title>
+    </head>
+<body onload="fetchOverview()">
+
+
+  <!-- Navigations Bar -->
+  <div class="topnav">
+    <a id='logo' class="active" href="home">PAWPAL</a>
+    <a class="headerElements" href="overview">Overview Dog Breeds</a>
+    <div class="search-container">
+      <form action="/action_page.php">
+        <input type="text" placeholder="Search.." name="search">
+      </form>
+    </div>
+    <a id="loginHeader" class="headerElements" href="#contact">Login|Sign Up</a>
+  
+  </div>
+
+  <div class="" id="dogCardsContainer">
+    <!-- Titel Überschrift -->
+    <div class="item1">
+      <div class="center_container">
+        <p> PAWPAL</p>
+      </div>
+    </div>
+    <!-- Text -->
+    <div class="item2">
+        <div class="center_container">
+            <ul class="alphabet-list">
+                <li id="A" onclick="filterChange('A')">A</li>
+                <li id="B" onclick="filterChange('B')">B</li>
+                <li id="C" onclick="filterChange('C')">C</li>
+                <li id="D" onclick="filterChange('D')">D</li>
+                <li id="E" onclick="filterChange('E')">E</li>
+                <li id="F" onclick="filterChange('F')">F</li>
+                <li id="G" onclick="filterChange('G')">G</li>
+                <li id="H" onclick="filterChange('H')">H</li>
+                <li id="I" onclick="filterChange('I')">I</li>
+                <li id="J" onclick="filterChange('J')">J</li>
+                <li id="K" onclick="filterChange('K')">K</li>
+                <li id="L" onclick="filterChange('L')">L</li>
+                <li id="M" onclick="filterChange('M')">M</li>
+                <li id="N" onclick="filterChange('N')">N</li>
+                <li id="O" onclick="filterChange('O')">O</li>
+                <li id="P" onclick="filterChange('P')">P</li>
+                <li id="Q" onclick="filterChange('Q')">Q</li>
+                <li id="R" onclick="filterChange('R')">R</li>
+                <li id="S" onclick="filterChange('S')">S</li>
+                <li id="T" onclick="filterChange('T')">T</li>
+                <li id="U" onclick="filterChange('U')">U</li>
+                <li id="V" onclick="filterChange('V')">V</li>
+                <li id="W" onclick="filterChange('W')">W</li>
+                <li id="X" onclick="filterChange('X')">X</li>
+                <li id="Y" onclick="filterChange('Y')">Y</li>
+                <li id="Z" onclick="filterChange('Z')">Z</li>
+            </ul>
+        </div>
+          
+
+ 
+        <!--  DogCards -->
+
+   
+    </div>
+
+  </div>
+  <div class="item3">
+    <p>2023 |<a id="impressum_btn" href="impressum"> Impressum</a> | Terms of Service | Privacy Policy</p>
+  </div>
+
+  
+</body>
+</html>

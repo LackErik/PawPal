@@ -1,0 +1,191 @@
+body {
+    /**
+      
+      background: linear-gradient(180deg, rgba(23,113,128,1) 0%, rgba(147,164,227,1) 0%, rgba(61,89,193,1) 100%);
+      background-color: rgba(0, 0, 0, 0);
+      background-position-x: 0%;
+      background-position-y: 0%;
+      background-repeat: repeat;
+      background-attachment: scroll;
+      background-image: linear-gradient(rgb(23, 113, 128) 0%, rgb(147, 164, 227) 0%, rgb(61, 89, 193) 100%);
+      background-size: auto;
+      background-origin: padding-box;
+      background-clip: border-box;
+    **/
+    height: auto;
+    background-image: linear-gradient(rgb(23, 113, 128) 0%, rgb(147, 164, 227) 0%, rgb(61, 89, 193) 100%);
+      }
+      h1 {
+        color: white;
+      }
+      p {
+        color: white;
+      }
+      .item1 { grid-area: titel; }
+      .item2 { grid-area: container; }
+      .item3 { grid-area: impressum; }
+      
+      .grid-container {
+        display: grid;
+        grid-template-areas:
+          'titel titel titel'
+          'container container container'
+          'impressum impressum impressum';
+        gap: 10px;
+        padding: 10px;
+      justify-content: center;
+      align-items: center;
+      }
+    
+      .grid-container > div {
+        padding: 20px 0;
+      }
+    
+      .center_container p{
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+      .center_container{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        overflow: visible;
+        white-space: nowrap;
+        text-align: center;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 33px;
+        color: rgba(255,255,255,1);
+      }
+      #back_btn{
+        cursor: pointer;
+        line-height: 21px;
+        text-align: left;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        color: rgba(255,255,255,1);
+        letter-spacing: 0.1px;
+
+      }
+      .question_block {
+        border-radius: 25px;
+        background: rgba(143,165,232,1);
+        padding: 20px 45px;
+        width: 600px;
+        margin: auto;
+        filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.396));
+
+      }
+      .img_button{
+        background: none;
+        background-color: none;
+        border: none;
+        display: block;
+        margin: auto;
+      }
+      .img_button.active {
+        background-color: rgba(59,95,202,1);
+        z-index: 3;
+      }
+      #question_Text{
+
+        white-space: nowrap;
+        text-align: center;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        color: rgba(255,255,255,1);
+      }
+      .pictures_block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 0px 50px 0px;
+      }
+      
+
+      
+      .imgbeagle{
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+      }
+      
+      /** Test   */
+
+      .button-bar {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        position: relative;
+      }
+      
+      .button-bar button {
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background-color: rgba(255,255,255,1);
+        border: none;
+        outline: none;
+        cursor: pointer;
+        position: relative;
+        z-index: 2; 
+      }
+      
+  
+      .button-bar button.active {
+        background-color: rgba(59,95,202,1);
+        z-index: 3;
+      }
+      
+      .button-bar .line {
+        position: absolute;
+        width: 0;
+        height: 2px;
+        background-color: rgba(255,255,255,1);
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+      }
+      
+      .button-bar .line.active {
+        background-color: rgba(59,95,202,1);
+      }
+      
+      .button-bar .background-line {
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: rgba(255,255,255,1);
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 0;
+      }
+      .ButtonText-Bar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      #button_nextquestion{
+        border-radius: 12px;
+        background-color:rgba(141,163,231,1);
+        border: none;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        margin-top: 20px ;
+        cursor: pointer;
+        filter: drop-shadow(0px 10px 6px rgba(0, 0, 0, 0.161));
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: 40%;
+        font-family: Montserrat;
+      }
+      
+      

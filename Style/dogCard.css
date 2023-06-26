@@ -1,0 +1,90 @@
+
+.card {
+    display: none;/*
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;*/
+  }
+  
+
+  .card.active {
+    display: flex;
+  }
+
+  br{
+    display: none;
+  }
+
+  br.active{
+    display: block;
+  }
+
+  .card-image {
+    flex-basis: 33.33%; /* Ein Drittel der Breite */
+    padding: 10px;
+    text-align: center;
+    margin-right: 10px;
+  }
+/*
+  .card-Middle {
+    flex-basis: 10%;
+    width: 10px;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+  }
+  */
+  .card-image img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+  
+  .card-content {
+    flex-basis: 56.66%; /* Zwei Drittel der Breite */
+    padding: 20px;
+    text-align: start;
+    margin-left: 20px;
+  }
+  
+  .card-content h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .card-content p {
+    margin-bottom: 5px;
+  }
+  
+
+  .alphabet-list {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .alphabet-list li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ccc;
+    margin-right: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    
+  }
+  
+  .alphabet-list li:hover {
+    border: 1px solid #86b8f8;
+  }
+  
+  .alphabet-list li:hover {
+    cursor: pointer;
+    cursor: pointer;
+  }
