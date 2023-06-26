@@ -297,7 +297,7 @@ describe('Button Test', () => {
     expect(page.url()).toBe('http://localhost:3000/question6');
   });
 
-  it('should simulate a click event on the "Impressum" link and redirect to the impressum page', async () => {
+  it('sollte den Impressums Button Testen und zum Impressum weiterleiten', async () => {
     await page.waitForSelector('#impressum_btn'); // Hier den Selektor des "Impressum" Links angeben
 
     const impressumLink = await page.$('#impressum_btn');
