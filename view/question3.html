@@ -12,7 +12,7 @@
   <!-- Navigations Bar -->
   <div class="topnav">
     <a id='logo' class="active" href="home">PAWPAL</a>
-    <a class="headerElements" href="#about">Overview Dog Breeds</a>
+    <a class="headerElements" href="overview">Overview Dog Breeds</a>
     <div class="search-container">
       <form action="/action_page.php">
         <input type="text" placeholder="Search.." name="search">
@@ -44,22 +44,22 @@
         </div>
         <div class="button-bar">
 
-          <button style='float: left;'id="button1" onclick="changeColor(1);auswahlSpeichern('q3','Option 1');" name="option" ></button>
+          <button style='float: left;'id="button1" onclick="changeColor(1);auswahlSpeichern('walking','0');" name="option" ></button>
         
-          <button style=' margin-left: auto;' id="button2" onclick="changeColor(2); auswahlSpeichern('q3','Option 2');" name="option" ></button>
+          <button style=' margin-left: auto;' id="button2" onclick="changeColor(2); auswahlSpeichern('walking','25');" name="option" ></button>
 
-          <button style='margin-right: auto; margin-left: auto;' id="button3" onclick="changeColor(3); auswahlSpeichern('q3','Option 3');" name="option"></button>
+          <button style='margin-right: auto; margin-left: auto;' id="button3" onclick="changeColor(3); auswahlSpeichern('walking','50');" name="option"></button>
        
-          <button style='float: right;' id="button4" onclick="changeColor(4); auswahlSpeichern('q3','Option 4');" name="option"></button>
+          <button style='float: right;' id="button4" onclick="changeColor(4); auswahlSpeichern('walking','75');" name="option"></button>
   
           <div class="line"></div>
           <div class="background-line"></div>
        
         </div>
         <div class="ButtonText-Bar">
-          <p>Small</p>
-          <p>Medium</p>
-          <p>Large</p>
+          <p>Short walks</p>
+          <p>Medium walks</p>
+          <p>Long walks</p>
         </div>
         <button id="button_nextquestion" style="display: none;"  onclick="location.href = '/question4';">Next</button>
         <p id="demo"></p>
