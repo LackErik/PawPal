@@ -63,7 +63,7 @@ function speichernAntwort1() {
        weiterButton.style.display = 'block';
       // Speichern der ausgewählten Option, z. B. in einer Variablen oder in Local Storage
       localStorage.setItem(thema, ausgewaehlteOption);
-      document.getElementById("demo").innerHTML = localStorage.getItem(thema);
+      document.getElementById("demo").innerHTML = localStorage.getItem(thema) + " " + localStorage.getItem(ausgewaehlteOption);
 
   }
 
@@ -83,12 +83,12 @@ function speichernAntwort1() {
   }
   function anzeigen(){
     var stats = "hi";
-    stats += "frage1: " + localStorage.getItem('q1');
-    stats += "frage2: " + localStorage.getItem('q2');
-    stats += "frage3: " + localStorage.getItem('q3');
-    stats += "frage4: " + localStorage.getItem('q4');
-    stats += "frage5: " + localStorage.getItem('q5');
-    stats += "frage6: " + localStorage.getItem('q6');
-    stats += "frage7: " + localStorage.getItem('q7');
+    stats += "Größe: " + localStorage.getItem('groesse');
+    stats += "Haus: " + localStorage.getItem('house');
+    stats += "Gassi: " + localStorage.getItem('walking');
+    stats += "PC?: " + localStorage.getItem('friendly');
+    stats += "Felllänge: " + localStorage.getItem('fell');
+    stats += "Fellpflege: " + localStorage.getItem('fellpflege');
+    stats += "Größe: " + localStorage.getItem('groesse');
     document.getElementById("demo").innerHTML = stats;
   }

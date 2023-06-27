@@ -9,6 +9,7 @@ app.use(express.static(__dirname + "/style"));
 app.use(express.static(__dirname + "/pictures"));
 app.use(express.static(__dirname + "/view"));
 app.use(express.static(__dirname + "/logic"));
+app.use(express.static(__dirname + "/data"));
 app.use(express.static('public'));
 
 app.get(['/','/home'], (req, res) => {
@@ -44,6 +45,10 @@ app.get("/result", function (req, res) {
 });
 app.get("/dogInfo", function (req, res) {
   res.sendFile(__dirname + "/view/dogInfo.html")
+});
+
+app.get("/overview", function (req, res) {
+  res.sendFile(__dirname + "/view/overview.html")
 });
 
 app.get('/impressum', (req, res) => {
