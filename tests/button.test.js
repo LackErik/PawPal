@@ -12,7 +12,7 @@ describe('Button Test', () => {
     app.start();
     browser = await puppeteer.launch({ headless: true });
     page = await browser.newPage();
-    await page.goto('http://localhost:3000'); // Hier die URL der HTML-Seite einfügen
+    await page.goto('http://localhost:8080'); // Hier die URL der HTML-Seite einfügen
   }, 30000);
 
   afterAll(async () => {
@@ -29,7 +29,7 @@ describe('Button Test', () => {
     await page.waitForNavigation({ timeout: 10000 });
 
     const url = await page.url();
-    expect(url).toBe('http://localhost:3000/question1'); // Hier die erwartete Weiterleitungs-URL einfügen
+    expect(url).toBe('http://localhost:8080/question1'); // Hier die erwartete Weiterleitungs-URL einfügen
   });
 
 
@@ -60,7 +60,7 @@ describe('Button Test', () => {
     // Überprüfen Sie, ob die Seite zur nächsten Frage weitergeleitet wurde
     await page.waitForNavigation();
     const newURL = page.url();
-    expect(newURL).toBe('http://localhost:3000/question2');
+    expect(newURL).toBe('http://localhost:8080/question2');
   });
 
 
@@ -90,7 +90,7 @@ describe('Button Test', () => {
     // Überprüfen Sie, ob die Seite zur nächsten Frage weitergeleitet wurde
     await page.waitForNavigation();
     const newURL = page.url();
-    expect(newURL).toBe('http://localhost:3000/question3');
+    expect(newURL).toBe('http://localhost:8080/question3');
   });
 
   
@@ -124,7 +124,7 @@ describe('Button Test', () => {
     // Überprüfen Sie, ob die Seite zur nächsten Frage weitergeleitet wurde
     await page.waitForNavigation();
     const newURL = page.url();
-    expect(newURL).toBe('http://localhost:3000/question4');
+    expect(newURL).toBe('http://localhost:8080/question4');
   });
 
   it('sollte die Bilder in Frage 4 überprüfen und zur nächsten Frage weiterleiten', async () => {
@@ -152,7 +152,7 @@ describe('Button Test', () => {
     // Überprüfen Sie, ob die Seite zur nächsten Frage weitergeleitet wurde
     await page.waitForNavigation();
     const newURL = page.url();
-    expect(newURL).toBe('http://localhost:3000/question5');
+    expect(newURL).toBe('http://localhost:8080/question5');
   });
 
   it('sollte die Button-Bar in Frage 5 überprüfen und zur nächsten Frage weiterleiten', async () => {
@@ -184,7 +184,7 @@ describe('Button Test', () => {
     // Überprüfen Sie, ob die Seite zur nächsten Frage weitergeleitet wurde
     await page.waitForNavigation();
     const newURL = page.url();
-    expect(newURL).toBe('http://localhost:3000/question6');
+    expect(newURL).toBe('http://localhost:8080/question6');
   });
 
   it('sollte die Button-Bar in Frage 6 überprüfen und zur nächsten Frage weiterleiten', async () => {
@@ -214,7 +214,7 @@ describe('Button Test', () => {
     // Überprüfen Sie, ob die Seite zur nächsten Frage weitergeleitet wurde
     await page.waitForNavigation();
     const newURL = page.url();
-    expect(newURL).toBe('http://localhost:3000/question7');
+    expect(newURL).toBe('http://localhost:8080/question7');
   });
 
   it('sollte die Button-Bar in Frage 7 überprüfen und zum Ergebnis weiterleiten', async () => {
@@ -244,57 +244,57 @@ describe('Button Test', () => {
     // Überprüfen Sie, ob die Seite zum Ergebnis weitergeleitet wurde
     await page.waitForNavigation();
     const newURL = page.url();
-    expect(newURL).toBe('http://localhost:3000/result');
+    expect(newURL).toBe('http://localhost:8080/result');
   });
 
   it('sollte den "Go Back"-Button auf jeder Seite überprüfen', async () => {
     // Seite 1
-    await page.goto('http://localhost:3000/question2');
+    await page.goto('http://localhost:8080/question2');
     await page.waitForSelector('#back_btn');
     const backButton1 = await page.$('#back_btn');
     await backButton1.click();
     await page.waitForNavigation();
-    expect(page.url()).toBe('http://localhost:3000/question1');
+    expect(page.url()).toBe('http://localhost:8080/question1');
   
     // Seite 2
-    await page.goto('http://localhost:3000/question3');
+    await page.goto('http://localhost:8080/question3');
     await page.waitForSelector('#back_btn');
     const backButton2 = await page.$('#back_btn');
     await backButton2.click();
     await page.waitForNavigation();
-    expect(page.url()).toBe('http://localhost:3000/question2');
+    expect(page.url()).toBe('http://localhost:8080/question2');
   
     // Seite 3
-    await page.goto('http://localhost:3000/question4');
+    await page.goto('http://localhost:8080/question4');
     await page.waitForSelector('#back_btn');
     const backButton3 = await page.$('#back_btn');
     await backButton3.click();
     await page.waitForNavigation();
-    expect(page.url()).toBe('http://localhost:3000/question3');
+    expect(page.url()).toBe('http://localhost:8080/question3');
   
     // Seite 4
-    await page.goto('http://localhost:3000/question5');
+    await page.goto('http://localhost:8080/question5');
     await page.waitForSelector('#back_btn');
     const backButton4 = await page.$('#back_btn');
     await backButton4.click();
     await page.waitForNavigation();
-    expect(page.url()).toBe('http://localhost:3000/question4');
+    expect(page.url()).toBe('http://localhost:8080/question4');
   
     // Seite 5
-    await page.goto('http://localhost:3000/question6');
+    await page.goto('http://localhost:8080/question6');
     await page.waitForSelector('#back_btn');
     const backButton5 = await page.$('#back_btn');
     await backButton5.click();
     await page.waitForNavigation();
-    expect(page.url()).toBe('http://localhost:3000/question5');
+    expect(page.url()).toBe('http://localhost:8080/question5');
   
     // Seite 6
-    await page.goto('http://localhost:3000/question7');
+    await page.goto('http://localhost:8080/question7');
     await page.waitForSelector('#back_btn');
     const backButton6 = await page.$('#back_btn');
     await backButton6.click();
     await page.waitForNavigation();
-    expect(page.url()).toBe('http://localhost:3000/question6');
+    expect(page.url()).toBe('http://localhost:8080/question6');
   });
 
   it('sollte den Impressums Button Testen und zum Impressum weiterleiten', async () => {
@@ -306,6 +306,6 @@ describe('Button Test', () => {
     await page.waitForNavigation({ timeout: 10000 });
 
     const url = await page.url();
-    expect(url).toBe('http://localhost:3000/impressum'); // Hier die erwartete Weiterleitungs-URL zur Impressum-Seite einfügen
+    expect(url).toBe('http://localhost:8080/impressum'); // Hier die erwartete Weiterleitungs-URL zur Impressum-Seite einfügen
   });
 });
