@@ -36,16 +36,9 @@
   */
   .card-image img {
     border-radius: 50%;
-    width: 140px;
-    height: 140px;
+    width: 100px;
+    height: 100px;
     object-fit: cover;
-    border: #e6e6e6;
-    border-style: solid;
-  }
-
-  .card-image h3 {
-      
-    color: aliceblue;
   }
   
   .card-content {

@@ -1,63 +1,56 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <link href="/quest_style_overview.css" type="text/css" rel="stylesheet" />
-      
-    <link href="/dogCard.css" type="text/css" rel="stylesheet" />
-      <link href="/navi.css" type="text/css" rel="stylesheet" />
-      <script src="/functions.js"></script>
-      <script src="/calculateResult.js"></script>
-      <script type="text/javascript">
-        
-      </script>
-      <title>Meine Webanwendung</title>
+    <link href="/quest_style.css" type="text/css" rel="stylesheet" />
+    <link href="/navi.css" type="text/css" rel="stylesheet" />
+    <script src="/functions.js"></script>
+    <title>Meine Webanwendung</title>
     </head>
-    <body onload = "result()">
+<body onload="anzeigen()">
+
+
+  <!-- Navigations Bar -->
+  <div class="topnav">
+    <a id='logo' class="active" href="home">PAWPAL</a>
+    <a class="headerElements" href="#about">Overview Dog Breeds</a>
+    <div class="search-container">
+      <form action="/action_page.php">
+        <input type="text" placeholder="Search.." name="search">
+      </form>
+    </div>
+    <a id="loginHeader" class="headerElements" href="#contact">Login|Sign Up</a>
+  
+  </div>
+
+  <div class="grid-container">
+    <!-- Titel Überschrift -->
+    <div class="item1">
+      <div class="center_container">
+        <p> PAWPAL</p>
+      </div>
+    </div>
+    <!-- Text -->
+    <div class="item2">
+
+ 
+    <!-- Question 7  -->
+
+    <div class="question_block" id="question7" >
+      <p id="question_Text">
+        Dein Hund ist:
+      </p>
+      <div class="pictures_block">
+        <img class="imgbeagle" style="width: 150px; float: left;" src="/undraw_bus_stop_re_h8ej.svg" alt="klein bild">
+      </div>
+      <p id="demo"></p>
+
+  
       
-
-    <!-- Navigations Bar -->
-    <div class="topnav">
-      <a id='logo' class="active" href="home">PAWPAL</a>
-      <a class="headerElements" href="#about">Overview Dog Breeds</a>
-      <div class="search-container">
-        <form action="/action_page.php">
-          <input type="text" placeholder="Search.." name="search">
-        </form>
-      </div>
-      <a id="loginHeader" class="headerElements" href="#contact">Login|Sign Up</a>
-    
-    </div>
-
-    <div id="dogCardsContainer">
-      <!-- Titel Überschrift -->
-      <div class="item1">
-        <div class="center_container">
-          <p id="titleHeadline"> PAWPAL</p>
-        </div>
-      </div>
-      <br>
-      <br>
-      <!-- Text -->
-      <div class="item2">
-
-        <div class="question_block" id="question7" >
-          <p id="question_Text">
-            Leider ist ein Fehler aufgetreten. <br>
-            <br>
-            Wir arbeiten daran.
-          </p>
-          <div class="pictures_block">
-            <img class="imgbeagle" style="width: 150px; float: left;" src="/undraw_bus_stop_re_h8ej.svg" alt="klein bild">
-          </div>
-
-      
-          
-        </div>
-      </div>
-    </div>
-    <div class="item3">
-      <p>2023 |<a id="impressum_btn" href="impressum"> Impressum</a> | Terms of Service | Privacy Policy</p>
-    </div>
+  </div>
+  </div>
+  <div class="item3">
+    <p>2023 |<a id="impressum_btn" href="impressum"> Impressum</a> | Terms of Service | Privacy Policy</p>
+  </div>
 
 
 </body>
