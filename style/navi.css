@@ -5,6 +5,9 @@
     margin: 0;
     font-family: Montserrat;
   }
+  #searchbar::placeholder{
+    color:#fff;
+  }
   .search_btn p{
     margin: 0;
   }
@@ -55,8 +58,10 @@
   }
   
   .topnav .search-container {
-    float: left;
     width: 50%;
+    margin-left: auto;
+   margin-right: auto;
+   display: block;
   }
   
   .topnav input[type=text] {

@@ -10,6 +10,7 @@ app.use(express.static(__dirname + "/pictures"));
 app.use(express.static(__dirname + "/view"));
 app.use(express.static(__dirname + "/logic"));
 app.use(express.static(__dirname + "/data"));
+app.use(express.static(__dirname + "/font"));
 app.use(express.static('public'));
 
 app.get(['/','/home'], (req, res) => {
