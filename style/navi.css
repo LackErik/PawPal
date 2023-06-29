@@ -1,9 +1,18 @@
   
   * {box-sizing: border-box;}
 
+  @font-face {
+    font-family: 'Monteserrat';
+    src: url('../font/Montserrat-Black.ttf') format('ttf');
+       
+    /* Weitere Formate hinzufügen, wenn vorhanden */
+    font-weight: normal;
+    font-style: normal;
+  }
+
   body {
     margin: 0;
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
   }
   #searchbar::placeholder{
     color:#fff;

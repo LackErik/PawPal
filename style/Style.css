@@ -1,8 +1,5 @@
 * {box-sizing: border-box;}
-@font-face {
-  font-family: "Montserrat";
-  src: url("/Montserrat-Black.ttf");
-}
+
 body { 
   margin: 0;
   font-family:Montserrat;
