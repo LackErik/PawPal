@@ -80,7 +80,7 @@ function result(){
                             pickyFrage = "der Trainingskapazität";
                             break;
                     }
-                    msgText.innerHTML = "Leider konnten wir keinen Hund für dich finden.. <br/>Deinem Wunsch " + pickyFrage + " entsprachen leider keine Hunde mehr.<br/><br/>Versuche doch nochmal diesen oder ein paar der<br/>anderen Wünsche zu verändern!<br/><br/> Es gibt sicherlich einen Hund der schon auf dich wartet!";
+                    msgText.innerHTML = "Leider konnten wir keinen Hund für dich finden.. <br/>Deinem Wunsch " + pickyFrage + " entsprachen<br/>leider keine Hunde mehr.<br/><br/>Versuche doch nochmal diesen oder ein paar der<br/>anderen Wünsche zu verändern!<br/><br/> Es gibt sicherlich einen Hund der<br/>schon auf dich wartet! ♥";
                     console.log(dogList);
                 }else{
                     resultCase = 1;
