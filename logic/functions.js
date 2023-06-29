@@ -89,6 +89,6 @@ function speichernAntwort1() {
     stats += "PC?: " + localStorage.getItem('friendly');
     stats += "Felllänge: " + localStorage.getItem('fell');
     stats += "Fellpflege: " + localStorage.getItem('fellpflege');
-    stats += "Größe: " + localStorage.getItem('groesse');
+    stats += "Trainierbar: " + localStorage.getItem('trainierbar');
     document.getElementById("demo").innerHTML = stats;
   }
