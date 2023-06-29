@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/dd749d2a-f9ef-48e6-a289-115200a6b819/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/pawpal",
+    "appService.deploySubpath": "."
+}
