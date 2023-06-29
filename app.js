@@ -59,6 +59,9 @@ app.get('/impressum', (req, res) => {
 module.exports.start = () => {
   server = app.listen(80, () => console.log('Die Anwendung ist auf http://localhost:80 verfügbar.'));
 };
+module.exports.start = () => {
+  server = app.listen(3000, () => console.log('Die Anwendung ist auf http://localhost:3000 verfügbar.'));
+};
 
 module.exports.close = () => {
   server.close();
