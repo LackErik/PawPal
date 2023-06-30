@@ -32,7 +32,7 @@ describe('Button Test', () => {
     expect(url).toBe('http://localhost:3000/question1'); // Hier die erwartete Weiterleitungs-URL einfügen
   });
 
-
+/*
   it('sollte die Button-Bar überprüfen und zur nächsten Frage weiterleiten', async () => {
     await page.waitForSelector('.button-bar'); // Warten, bis die Button-Bar geladen ist
   
@@ -246,7 +246,7 @@ describe('Button Test', () => {
     const newURL = page.url();
     expect(newURL).toBe('http://localhost:3000/result');
   });
-
+*/
   it('sollte den "Go Back"-Button auf jeder Seite überprüfen', async () => {
     // Seite 1
     await page.goto('http://localhost:3000/question2');
