@@ -136,6 +136,9 @@ function generateDogCards(dogs) {
 
 
 function filterChange(letter){
+    let resultBox = document.querySelector(".result-box");
+    resultBox.innerHTML = "";
+    resultBox.style.display = "none";
     var dogCards = document.querySelectorAll(".card");
     console.log("1");
     dogCards.forEach(dogCard => {
