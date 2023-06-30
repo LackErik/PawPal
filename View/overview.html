@@ -6,9 +6,10 @@
     <link href="/navi.css" type="text/css" rel="stylesheet" />
     <link href="/dogInfo_style.css" type="text/css" rel="stylesheet" />
     <script src="/dataManager.js"></script>
+    <script src="/searchbar.js"></script>
     <title>Meine Webanwendung</title>
     </head>
-<body onload="fetchOverview()">
+<body onload="fetchOverview();fetchBreedNames();">
 
 
   <!-- Navigations Bar -->
@@ -19,6 +20,9 @@
       <form action="/action_page.php">
         <input type="text" placeholder="Search.." name="search" id="searchbar">
       </form>
+    <div class="result-box">
+      
+    </div>
     </div>
     <a id="loginHeader" class="headerElements" href="#contact">Login|Sign Up</a>
   

@@ -74,6 +74,43 @@
     margin-right: auto;
     border-width: 2px;
   }
+
+  .result-box{
+    font-size: 17px;
+    border: none;
+    background-color: rgba(141,163,231,1);
+    border-style: solid;
+    border-radius: 12px;
+    border-color: white;
+    margin-top: -2px;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-width: 2px;
+  }
+  .result-box ul{
+    
+    margin: 8px;
+    padding: 0;
+  }
+
+  .result-box ul li{
+    margin: 0;
+    margin-left: 20px;
+    padding: 0;
+    list-style-position: inside;
+    color: azure;
+    list-style: none;
+    cursor: pointer;
+  }
+
+  .result-box ul hr{
+    border-color: azure;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  
   
   .topnav .search-container button {
     padding: 6px 10px;
