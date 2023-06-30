@@ -25,9 +25,9 @@ font-family: Montserrat;
   }
   .item1 { grid-area: header; }
   .item2 { grid-area: main; }
-  .item3 { grid-area: right; }
+  .item5 { grid-area: right; }
   .item4 { grid-area: footer; }
-  .item5 { grid-area: impressum; }
+  .item3 { grid-area: impressum; }
 
 #title1{
 

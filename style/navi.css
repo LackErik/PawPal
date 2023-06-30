@@ -2,6 +2,7 @@
   * {box-sizing: border-box;}
 
   body {
+    min-height: 100vh;
     margin: 0;
     font-family: Montserrat;
   }
@@ -76,6 +77,7 @@
   }
 
   .result-box{
+    display: none;
     font-size: 17px;
     border: none;
     background-color: rgba(141,163,231,1);
@@ -146,4 +148,25 @@
       border: 1px solid #ccc;  
     
     }
+  }
+
+  .item3 p a{
+    color: azure;
+    text-decoration: none;
+  }
+
+  hr{
+    border-color: azure;
+  }
+
+  #impres_titel{
+    text-decoration: none;
+  }
+
+  .item3{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    justify-content: center;
   }
