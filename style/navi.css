@@ -1,10 +1,22 @@
   
   * {box-sizing: border-box;}
 
+  @font-face {
+    font-family: 'Monteserrat';
+    src: url('../font/Montserrat-Black.ttf') format('ttf');
+       
+    /* Weitere Formate hinzufügen, wenn vorhanden */
+    font-weight: normal;
+    font-style: normal;
+  }
+
   body {
     min-height: 100vh;
     margin: 0;
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
+  }
+  #searchbar::placeholder{
+    color:#fff;
   }
   .search_btn p{
     margin: 0;
@@ -56,8 +68,10 @@
   }
   
   .topnav .search-container {
-    float: left;
     width: 50%;
+    margin-left: auto;
+   margin-right: auto;
+   display: block;
   }
   
   .topnav input[type=text] {

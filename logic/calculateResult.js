@@ -40,7 +40,7 @@ function result(){
             console.log(msgText);
             if(parseInt(walking) == 0 && parseInt(house) == 0){
                 resultCase = 9;
-                msgText.innerHTML = "Du scheinst nicht genug Kapazitäten für einen Hund zu haben. <br/><br/> Ein Hund braucht sehr viel Auslauf und möchte gerne etwas <br/> von der Welt sehen. <br/><br/> Bitte überlege, ob du einem Hund wirklich das Zuhause<br/> bieten kannst, dass er verdient."
+                msgText.innerHTML = "Du scheinst nicht genug Kapazitäten für einen<br/>Hund zu haben. <br/><br/> Ein Hund braucht sehr viel Auslauf und möchte<br/> gerne etwas von der Welt sehen. <br/><br/> Bitte überlege, ob du einem Hund wirklich das <br/>Zuhause bieten kannst, dass er verdient."
 
             }else{
         
