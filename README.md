@@ -1,9 +1,9 @@
 # Pawpal
-                                                        / \__
-Link zu unserer Website:                               (    @\___
-https://pawpal.azurewebsites.net/home                  /         O
-                                                      /   (_____/
-                                                    /_____/   U
+                                                        
+Link zu unserer Website:                              
+https://pawpal.azurewebsites.net/home             
+
+![Alt text](pictures/undraw_dog_c7i6.svg)
 
 English version below! (Thanks to GPT for translating)
 
@@ -12,12 +12,12 @@ English version below! (Thanks to GPT for translating)
 *******************************************************************************
 
 Voraussetzungen:
--Node.js v19.8.1
--aktuelles JDK & JRE
--Java IDE
--Selenium im Gradle Builder (für die Java IDE)
--Anderer Browser als Mozilla Firefox
--Montserrat Font
+  -Node.js v19.8.1
+  -aktuelles JDK & JRE
+  -Java IDE
+  -Selenium im Gradle Builder (für die Java IDE)
+  -Anderer Browser als Mozilla Firefox
+  -Montserrat Font
 
 
 *******************************************************************************
@@ -60,41 +60,7 @@ Der Firefox Browser unterstützt ggf. einige unserer Formatierungen nicht!
    Oben links ist unsere Übersicht per link zugänglich. Tob dich hier entweder mit der alphabetischen Filterung oder der
    Searchbar oben aus. Wir haben Informationen zu über 200 Hunderassen! Also für jeden den passenden Hund!
 
-           __.                                              
-        .-".'                      .--.            _..._    
-      .' .'                     .'    \       .-""  __ ""-. 
-     /  /                     .'       : --..:__.-""  ""-. \
-    :  :                     /         ;.d$$    sbp_.-""-:_:
-    ;  :                    : ._       :P .-.   ,"TP        
-    :   \                    \  T--...-; : d$b  :d$b        
-     \   `.                   \  `..'    ; $ $  ;$ $        
-      `.   "-.                 ).        : T$P  :T$P        
-        \..---^..             /           `-'    `._`._     
-       .'        "-.       .-"                     T$$$b    
-      /             "-._.-"               ._        '^' ;   
-     :                                    \.`.         /    
-     ;                                -.   \`."-._.-'-'     
-    :                                 .'\   \ \ \ \         
-    ;  ;                             /:  \   \ \ . ;        
-   :   :                            ,  ;  `.  `.;  :        
-   ;    \        ;                     ;    "-._:  ;        
-  :      `.      :                     :         \/         
-  ;       /"-.    ;                    :                    
- :       /    "-. :                  : ;                    
- :     .'        T-;                 ; ;        
- ;    :          ; ;                /  :        
- ;    ;          : :              .'    ;       
-:    :            ;:         _..-"\     :       
-:     \           : ;       /      \     ;      
-;    . '.         '-;      /        ;    :      
-;  \  ; :           :     :         :    '-.      
-'.._L.:-'           :     ;          ;    . `. 
-                     ;    :          :  \  ; :  
-                     :    '-..       '.._L.:-'  
-                      ;     , `.                
-                      :   \  ; :                
-                      '..__L.:-'
-
+![Alt text](pictures/beagle_rechts.png)
 ***************************************************************************************
 
 Pawpal
