@@ -1,9 +1,19 @@
-## Pawpal
-                                                        
-Link zu unserer Website:                              
-https://pawpal.azurewebsites.net/home             
+# Pawpal
 
 ![Alt text](pictures/undraw_dog_c7i6.svg)
+
+
+Made by:
+- Justus Boos
+- Clara Goedecke
+- Erik Lackmann
+- Maurice Peplinski
+
+Im Rahmen der HAW Veranstaltung *Software Engineering*
+
+Link zu unserer Website:                              
+- https://pawpal.azurewebsites.net/home             
+
 
 English version below! (Thanks to GPT for translating)
 
@@ -22,7 +32,7 @@ English version below! (Thanks to GPT for translating)
 
 
 *******************************************************************************
-# Als Entwickler:
+## Als Entwickler:
 
 Die Software im Repo ist in zwei Teile geteilt. 
 - Web Scraper
@@ -44,7 +54,7 @@ Durch unsere Bemühungen im Rahmen der Continuous Integration und dem Continuous
 automatisch getestet und nach einigen Minuten (Normalerweise unter 10 Min) im Web deployt. (URL s.o.)
 
 ********************************************************************************
-# Als Nutzer:
+## Als Nutzer:
 
 Wir empfehlen zum Benutzen unserer Web Anwendung einen anderen Browser, als den Mozilla Firefox Browser.
 Der Firefox Browser unterstützt ggf. einige unserer Formatierungen nicht!
@@ -66,7 +76,7 @@ Der Firefox Browser unterstützt ggf. einige unserer Formatierungen nicht!
 ![Alt text](pictures/beagle_rechts.png)
 ***************************************************************************************
 
-## Pawpal
+# Pawpal
 
 Link to our website:
 https://pawpal.azurewebsites.net/home
@@ -86,7 +96,7 @@ https://pawpal.azurewebsites.net/home
 - Montserrat Font
 
 ***************************************************************************************
-# For Developers:
+## For Developers:
 
 The software in the repository is divided into two parts.
 - Web Scraper
@@ -107,7 +117,7 @@ tested and deployed on the web after pushing or merging into the main branch.
 It usually takes a few minutes (usually less than 10 minutes) for the deployment to happen. (URL mentioned above)
 
 ****************************************************************************************
-# For Users:
+## For Users:
 
 We recommend using a browser other than Mozilla Firefox to use our web application.
 Firefox browser may not support some of our formatting!
